@@ -1,0 +1,11 @@
+name: build-pr
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test style
+        run: echo "hello world"
