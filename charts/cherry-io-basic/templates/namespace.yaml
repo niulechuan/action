@@ -1,0 +1,6 @@
+{{- if not (lookup "v1" "Namespace" "" .Release.Namespace) }}
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ .Release.Namespace }}
+{{- end }}
