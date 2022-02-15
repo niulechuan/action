@@ -8,16 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test style
-        run: kubectl get no
-  create-cluster:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create k8s Kind Cluster
-        uses: helm/kind-action@v1.2.0
-      - name: Get node
-        run: kubectl get no
-  after:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test style
-        run: kubectl get no
+        run: echo "Start"
