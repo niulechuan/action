@@ -1,5 +1,5 @@
-name: Bug Report
-description: Report a bug encountered while operating Kubernetes
+name: Bug
+description: Report a bug
 labels: kind/bug
 body:
   - type: textarea
@@ -7,7 +7,7 @@ body:
     attributes:
       label: What happened?
       description: |
-        Please provide as much info as possible. Not doing so may result in your bug not being addressed in a timely manner.
+        Please provide as much info as possible.
     validations:
       required: true
 
@@ -31,43 +31,19 @@ body:
       label: Anything else we need to know?
 
   - type: textarea
-    id: kubeVersion
+    id: versions
     attributes:
-      label: Kubernetes version
+      label: Versions
       value: |
         <details>
 
         ```console
         $ kubectl version
         # paste output here
-        ```
 
-        </details>
-    validations:
-      required: true
-
-  - type: textarea
-    id: cloudProvider
-    attributes:
-      label: Cloud provider
-      value: |
-        <details>
-
-        </details>
-    validations:
-      required: true
-
-  - type: textarea
-    id: osVersion
-    attributes:
-      label: OS version
-      value: |
-        <details>
-
-        ```console
-        # On Linux:
         $ cat /etc/os-release
         # paste output here
+        
         $ uname -a
         # paste output here
 
@@ -75,32 +51,5 @@ body:
         C:\> wmic os get Caption, Version, BuildNumber, OSArchitecture
         # paste output here
         ```
-
-        </details>
-
-  - type: textarea
-    id: installer
-    attributes:
-      label: Install tools
-      value: |
-        <details>
-
-        </details>
-
-  - type: textarea
-    id: runtime
-    attributes:
-      label: Container runtime (CRI) and and version (if applicable)
-      value: |
-        <details>
-
-        </details>
-
-  - type: textarea
-    id: plugins
-    attributes:
-      label: Related plugins (CNI, CSI, ...) and versions (if applicable)
-      value: |
-        <details>
 
         </details>
