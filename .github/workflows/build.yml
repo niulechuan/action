@@ -1,9 +1,7 @@
-name: Release Charts
+name: Build HwameiStor
 
 on:
   push:
-    # tags:        
-    #  - '*'
     branches:
       - master
       - main
