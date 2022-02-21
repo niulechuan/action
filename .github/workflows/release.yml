@@ -25,4 +25,3 @@ jobs:
       - name: build
         run: |
           echo $RELEASE_VERSION
-          echo ${{ env.RELEASE_VERSION }
