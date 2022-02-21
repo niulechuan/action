@@ -1,7 +1,7 @@
 name: Release HwameiStor
 
 on:
-  push:
+  create:
     tags:        
      - '*'
 
