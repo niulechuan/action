@@ -1,5 +1,5 @@
 release:
-	echo ${RELEASE_DOCKER_REGISTRY}/hwameistor:${RELEASE_TAG}
+	echo ${RELEASE_DOCKER_REGISTRY}:${RELEASE_TAG}
 
 test:
 	echo "ter"
