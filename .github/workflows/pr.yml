@@ -19,4 +19,4 @@ jobs:
           go-version: 1.17
       - name: unit-test
         run: |
-          make test
+          ls ${GITHUB_WORKSPACE}
