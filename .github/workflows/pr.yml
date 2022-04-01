@@ -21,7 +21,4 @@ jobs:
         env:
           GOVC_USERNAME: ${{ secrets.GOVC_USERNAME }}
           KKDJ: "234"
-        run: |
-          echo ${GOVC_USERNAME}
-          echo "132"
-          echo ${KKDJ}
+        run: make test
