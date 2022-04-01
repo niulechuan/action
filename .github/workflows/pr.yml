@@ -22,3 +22,4 @@ jobs:
           GOVC_USERNAME: ${{ secrets.GOVC_USERNAME }}
         run: |
           echo ${GOVC_USERNAME}
+          echo "132"
