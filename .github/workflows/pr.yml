@@ -19,7 +19,8 @@ jobs:
           go-version: 1.17
       - name: unit-test
         env:
-          GOVC_USERNAME: ${{ secrets.GOVC_USERNAME }}
+          #          GOVC_USERNAME: ${{ secrets.GOVC_USERNAME }}
+          GOVC_USERNAME: "123444"
         run: |
           echo ${GOVC_USERNAME}
           echo "132"
