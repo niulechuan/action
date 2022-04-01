@@ -20,5 +20,6 @@ jobs:
       - name: unit-test
         env:
           GOVC_USERNAME: ${{ secrets.GOVC_USERNAME }}
-        run: |
-          echo ${GOVC_USERNAME}
+          GOVC_PASSWORD: ${{ secrets.GOVC_PASSWORD }}
+          KKDJ: "234"
+        run: make test
